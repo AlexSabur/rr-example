@@ -1,0 +1,10 @@
+http:
+  address: 0.0.0.0:8080
+  workers:
+    command: 'php ./vendor/bin/rr-worker'
+    pool:
+      numWorkers: 4
+      maxJobs: 64
+
+static:
+  dir: 'public'
