@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f6d0d5f9b0c55f7e21b13762715c90b2",
+    "content-hash": "c6629faa25a77e8208162339176a7a2e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5422,6 +5422,72 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "avto-dev/stacked-dumper-laravel",
+            "version": "v1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/avto-dev/stacked-dumper-laravel.git",
+                "reference": "5ec0d88217aad19dcbed93a04f974d6fe305271f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/avto-dev/stacked-dumper-laravel/zipball/5ec0d88217aad19dcbed93a04f974d6fe305271f",
+                "reference": "5ec0d88217aad19dcbed93a04f974d6fe305271f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/container": "~6.0 || ~7.0 || ~8.0",
+                "illuminate/contracts": "~6.0 || ~7.0 || ~8.0",
+                "illuminate/http": "~6.0 || ~7.0 || ~8.0",
+                "illuminate/support": "~6.0 || ~7.0 || ~8.0",
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "laravel/laravel": "~6.0 || ~7.0 || ~8.0",
+                "phpstan/phpstan": "~0.12.34",
+                "phpunit/phpunit": "^8.0 || ^9.3"
+            },
+            "suggest": {
+                "spiral/roadrunner-laravel": "RoadRunner ⇆ Laravel bridge"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AvtoDev\\StackedDumper\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AvtoDev\\StackedDumper\\": "src/"
+                },
+                "files": [
+                    "functions/dump.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "avto-dev",
+                    "homepage": "https://github.com/avto-dev"
+                }
+            ],
+            "description": "Stacked variables dumper for Laravel-based application",
+            "keywords": [
+                "laravel",
+                "version"
+            ],
+            "support": {
+                "issues": "https://github.com/avto-dev/stacked-dumper-laravel/issues",
+                "source": "https://github.com/avto-dev/stacked-dumper-laravel"
+            },
+            "time": "2020-12-30T09:11:28+00:00"
+        },
         {
             "name": "doctrine/instantiator",
             "version": "1.4.0",
